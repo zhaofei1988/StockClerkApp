@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ffffff"
+
+        android:layout_weight="1">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:background="@color/ffffff"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bottom_get"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/ffffff"
+            android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+            android:text="完成收货" />
+
+        <Button
+            android:id="@+id/bottom_out"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="@color/ffffff"
+            android:layout_marginRight="20dp"
+            android:text="完成出库" />
+    </RelativeLayout>
+</LinearLayout>
